@@ -10,7 +10,12 @@ namespace BookShoppingCart.Models
 
         [Required]
         [MaxLength(40)]
+
         public string? BookName { get; set; }
+
+        [Required]
+        [MaxLength(40)]
+        public string? AutorName { get; set; }
         [Required]
 
         public double Price { get; set; }  
