@@ -18,18 +18,22 @@ namespace BookShoppingCart.Models
         public string? AutorName { get; set; }
         [Required]
 
-        public double Price { get; set; }  
+        public double Price { get; set; }
 
         public string? Image { get; set; }
-        [Required] 
-        
+        [Required]
+
         public int GenreId { get; set; }
 
-        public Genre Genre { get; set; } 
-        
-        public List<OrderDetail> OrderDetail { get; set; }    
+        public Genre Genre { get; set; }
 
-        public List<CartDetail> CartDetail { get; set; }    
-          
+        public List<OrderDetail> OrderDetail { get; set; }
+
+        public List<CartDetail> CartDetail { get; set; }
+
+        [NotMapped]
+
+        public string GenreName { get; set; }
+
     }
 }
