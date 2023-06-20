@@ -10,7 +10,6 @@ namespace BookShoppingCart.Models
 
         [Required]
         [MaxLength(40)]
-
         public string? BookName { get; set; }
 
         [Required]
